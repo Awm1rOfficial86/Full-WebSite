@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-   
+    
+    
 }
 @font-face {
     font-family: 'lalezar';
@@ -218,6 +219,9 @@ margin-top: 2rem;
     }
     #Oppp{
         margin-top: -50px;
+    }
+    #Pack-BtSh{
+        width: 10rem;
     }
   }
 
