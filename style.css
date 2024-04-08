@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+   
 }
 @font-face {
     font-family: 'lalezar';
@@ -15,6 +16,9 @@
 #Web-Top{
 width: 100%;
 height: 5rem;
+position: fixed;
+z-index: 100;
+background: white;
 }
 #Logo{
     height: 4rem;
@@ -27,7 +31,7 @@ height: 5rem;
 }
 #Pack-BtSh{
     height: 3rem;
-    width: 31rem;
+    width: 27%;
     position: relative;
     left: 3rem;
     top:0.9rem;
@@ -38,6 +42,7 @@ height: 5rem;
     background: rebeccapurple;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
 }
 #Input-Sh{
     width: 23rem;
@@ -58,6 +63,11 @@ height: 5rem;
     display: inline-block;
     padding-right: 2rem;
     cursor: pointer;
+    color: white;
+}
+#Lip li:hover{
+    color: black;
+    transition: 400ms inherit;
 }
 #Lip{
     top: 1.3rem;
@@ -82,9 +92,7 @@ height: 5rem;
     height: 1.7rem;
     width: 1.7rem;
 }
-#Bg-Back{
-    
-}
+
 #Oppp{
 width: 100%;
 height: 53rem;
@@ -139,6 +147,15 @@ margin-top: 2rem;
     float: right;
     cursor: pointer;
     
+    
+}
+#Btn-Buy:hover{
+    transition: 400ms inherit;
+    box-shadow: 0px 1px 20px 0px purple;
+}
+#Read:hover{
+    transition: 400ms inherit;
+    box-shadow: 0px 1px 20px 0px white;
 }
 #Rpp{
     position: relative;
@@ -149,15 +166,67 @@ margin-top: 2rem;
     position: relative;
     top: 0.6rem;
 }
+#MenuBar{
+    height: 3rem;
+    width: 3rem;
+    background: rebeccapurple;
+    display: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 100;
+    position: relative;
+}
+#MenuBar img{
+    height: 3rem;
+    width: 3rem;
+}
+#Listp{
+    width: 15rem;
+    height: 37rem;
+    background: rebeccapurple;
+    position: absolute;
+    z-index: 99;
+    top: -14px;
+    left: -49px;
+    position: absolute;
+    display: none;
+    
+}
+#Listp ul{
+    margin-top: 4rem;
+    position: relative;
+    text-align: center;
 
+}
+#Listp ul li a{
+    color: white;
+    cursor: pointer;
+}
+#Listp ul li a:hover{
+    color: black;
+}
 @media only screen and (max-width: 900px) {
-    #Pack-BtSh {
+    #Input-Sh {
       display: none;
     }
+    #Btn-Sh {
+        display: none;
+      }
     #Navbar{
         display: none;
     }
     #Oppp{
         margin-top: -50px;
     }
+  }
+
+  @media only screen and (max-width: 899px) {
+    #MenuBar {
+      display: flex;
+     
+    }
+    #Listp{
+        
+    }
+
   }
